@@ -1,0 +1,110 @@
+{
+  "posts": [
+    {
+      "id": "3dd5a5d8-778f-4809-8d8d-702f2c56f51a",
+      "author": "Kamal",
+      "content": "Since 500px started as a photographic community in 2003, over 15 million photographers from 195 countries have shared over 120 million images for the world to enjoy. Getty Images is pleased to offer several million of the best images from the community for exclusive licensing, with new images being added all the time",
+      "image": "blob:http://localhost:3000/233f1430-a200-4782-bfbe-e584d59b41bb"
+    },
+    {
+      "id": "4cde9e83-3f07-41d2-ae05-8047cb6e3f79",
+      "author": "Kamal",
+      "content": "You can use JSON Server to serve your HTML, JS and CSS, simply create a",
+      "image": "blob:http://localhost:3000/7bd5e40f-ad5d-4d3e-b524-acda845b0a57"
+    },
+    {
+      "id": "6cff8a29-a604-4097-bc74-9058e606e13a",
+      "author": "Kamal",
+      "content": "gjnghmhmm",
+      "image": "blob:http://localhost:3000/7c11fa3c-e7e0-4c88-9a21-534f3a81a1a3"
+    },
+    {
+      "id": "37070625-404e-41f2-835a-42447373d5c2",
+      "author": "Kamal",
+      "content": "gjgfjgrsjg 8ughregubagjebdgj",
+      "image": "blob:http://localhost:3000/89e4ad21-2573-4bdd-b9e3-7b89166fc441"
+    },
+    {
+      "id": "da0dec34-aecb-42f9-bb56-3788bb8fcdf4",
+      "author": "Kamal",
+      "content": "gfnghn",
+      "image": "blob:http://localhost:3000/98129681-62df-4fdb-b490-99fa3ea92ab3"
+    },
+    {
+      "id": "355aa79d-041c-4bfc-80d9-8791c25640d5",
+      "author": "Kamal",
+      "content": "wwewewe",
+      "image": "blob:http://localhost:3000/b5ca83ea-9346-47d2-8254-7212bf2a770a"
+    },
+    {
+      "id": "84cbff7e-cac1-44db-a678-a4971362ce27",
+      "author": "Kamal",
+      "content": "11111111111111",
+      "image": "blob:http://localhost:3000/5b97a35e-a0c6-4ff1-adf9-38136c436eae"
+    },
+    {
+      "id": "b7ce522a-c647-4585-93a6-8d8a78560a57",
+      "author": "Kamal",
+      "content": "lllllllllllllllllll",
+      "image": "blob:http://localhost:3000/7242b3ee-71ed-4903-bf9f-4aa585bbf6e5"
+    },
+    {
+      "id": "0411eb83-686c-46b8-a952-fac1bebac4f8",
+      "author": "Kamal",
+      "content": "12121212121",
+      "image": "blob:http://localhost:3000/e5ca100d-c5e3-4987-ba16-922507d42c33"
+    },
+    {
+      "id": "860f5415-e0f0-4652-a95b-094ae8c7937e",
+      "author": "Kamal",
+      "content": "humari image",
+      "image": "blob:http://localhost:3000/a2dbe77d-64d5-458b-b368-4ec24bdfd14a"
+    },
+    {
+      "id": "6ef82cfc-d397-4569-a1e3-a9e61180bcf9",
+      "author": "Kamal",
+      "content": "112121212121",
+      "image": "blob:http://localhost:3000/e3b39789-422a-4f2c-b4b9-3136c4de82b3"
+    },
+    {
+      "id": "bf31fd8d-5b3c-478e-ad6f-21d2b7a28f31",
+      "author": "Kamal",
+      "content": "2222222222222",
+      "image": "blob:http://localhost:3000/49e81fc1-2a42-4eb4-b143-001c8c3c7c0e"
+    },
+    {
+      "id": "c33efd3b-d224-4936-8f89-a856c330346d",
+      "author": "Kamal",
+      "content": "fire",
+      "image": "blob:http://localhost:3000/1776ecf2-0afa-4647-9bc1-dc96fc650643"
+    },
+    {
+      "id": "93249159-ab05-4e5e-a3c0-b59831e7a3e6",
+      "author": "Kamal",
+      "content": "jyghjgj",
+      "image": "blob:http://localhost:3000/bb8add9c-098d-4f52-a537-bd77afd86888"
+    },
+    {
+      "id": "949c0e97-92b0-4fb8-a48a-097238da2e76",
+      "author": "Kamal",
+      "content": "hmhgm",
+      "image": "blob:http://localhost:3000/7ee2c617-c5af-403a-8d04-b16b29713620"
+    },
+    {
+      "id": "a2080a37-8d85-47b9-a640-752af1ff9d59",
+      "author": "Kamal",
+      "content": "bv bnm bmm",
+      "image": "blob:http://localhost:3000/70054bd9-0c10-4442-89a7-63facd2ed28e"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

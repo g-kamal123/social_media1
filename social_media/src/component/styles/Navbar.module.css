@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 1px 0 0px 0px rgba(0, 0, 0, 0.26);
+}
+.navbar i{
+    /* color: blue; */
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 70px;
+}
+.navbar i:hover{
+    background-color: #d4d7d8;
+}
+.navbar img{
+    height: 4rem;
+    width: 4rem;
+    /* border: 2px solid black; */
+    border-radius: 100px;
+    cursor: pointer;
+}
+.navbar .logo{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.navbar .profile{
+    font-size: 2.9rem;
+}

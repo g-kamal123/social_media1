@@ -1,0 +1,83 @@
+.trending{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.trending .search{
+    position: sticky;
+    top: 0;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 4%;
+    display: flex;
+    gap: 0.8rem;
+    width: fit-content;
+    background-color: #EFF3F4
+}
+.trending .search input{
+    border: none;
+    font-size: 1rem;
+    background-color: #EFF3F4
+}
+.search:focus-within{
+    border:1px solid #1D9BF0
+}
+.trending .search input:focus{
+    outline-width: 0;
+}
+.trending .search i{
+    font-weight: 550;
+    /* color: #EFF3F4; */
+}
+.trending .trendingNames{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #EFF3F4;
+    border-radius: 15px;
+    padding: 2%;
+}
+.trending .trendingNames ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.trending .trendingNames h5{
+    margin: 0;
+}
+.trending .trendingNames button{
+    padding: 4% 1rem;
+    border: none;
+    background-color: rgb(15, 15, 15);
+    color: whitesmoke;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+.trending .trendingNames li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding:1% 5%;
+    width: 100%;
+    /* border-radius: 10px; */
+    cursor: pointer;
+}
+.trendingNames li:hover{
+    background-color: #dfe7e7;
+}
+.trending .trendingNames img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 4px;
+}
+.trendingNames p{
+    margin: 0;
+}
