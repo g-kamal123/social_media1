@@ -39,3 +39,6 @@
 .feeds .content .textContent{
     width: 32rem;
 }
+.active{
+    color: red;
+}

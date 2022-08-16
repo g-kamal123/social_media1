@@ -1,12 +1,17 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { Storage } from './Storage'
 import classes from './styles/Feeds.module.css'
 
 function Feeds() {
   const detail = useContext(Storage)
+  const likes =(val)=>{
+
+  }
   return (
     <ul className={classes.feeds}>
       {detail.postsData.map((item)=>
+      
       <>
       <hr />
       <li>
@@ -21,9 +26,11 @@ function Feeds() {
           <img src={item.image} alt=''/>
       <hr />
           <p className={classes.action}>
-          <i className="fa-solid fa-comment"></i>
+          <Link to='/FeedDetails' state={{feed:item}}>
+          <i className="fa-solid fa-comment" onClick={()=>detail.fetchComment(item)}></i>
+          </Link>
           <i className="fa-solid fa-retweet"></i>
-          <i className="fa-regular fa-heart"></i>
+          <i className={`fa-solid fa-heart ${detail.allLikes.map((it)=>it.postId===item.id && classes.active)}`} onClick={()=>detail.addLike(item)}></i>
           </p>
       </div>
       </li></>)}

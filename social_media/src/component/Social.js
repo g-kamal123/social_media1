@@ -1,4 +1,6 @@
 import React, { useContext, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import FeedDeatail from "./FeedDeatail";
 import Feeds from "./Feeds";
 import Navbar from "./Navbar";
 import { Storage } from "./Storage";
@@ -12,12 +14,12 @@ function Social() {
   const uploadImg = (event) => {
     if (event.target.files && event.target.files[0]) {
       let img = event.target.files[0];
-      const newBlob = new Blob([img], {type: "response.data.type"});
+      const newBlob = new Blob([img], { type: "response.data.type" });
       setGetImage(URL.createObjectURL(newBlob));
-      document.getElementById('chhotaImage').style.display='block'
+      document.getElementById("chhotaImage").style.display = "block";
     }
   };
-  // console.log(getimage);
+  console.log(getimage);
   return (
     <div className={classes.social}>
       <Navbar />
@@ -31,11 +33,11 @@ function Social() {
           </div>
           <form
             onSubmit={(event) => {
-              event.preventDefault()
+              event.preventDefault();
               detail.tweetHandler(tweetContent, getimage);
-              setGetImage('')
-              setTweetContent('')
-              document.getElementById('chhotaImage').style.display ='none'
+              setGetImage("");
+              setTweetContent("");
+              document.getElementById("chhotaImage").style.display = "none";
             }}
           >
             <textarea
@@ -63,7 +65,7 @@ function Social() {
                   className="fa-regular fa-image"
                   style={{ color: "blue", fontSize: "2rem" }}
                 ></i>
-                <img src={getimage} alt='' id="chhotaImage" hidden/>
+                <img src={getimage} alt="" id="chhotaImage" hidden />
               </label>
               <input
                 id="file-input"
@@ -71,14 +73,17 @@ function Social() {
                 style={{ display: "none" }}
                 onChange={uploadImg}
               />
-               
+
               <button type="submit" disabled id="tweetButton">
                 Tweet
               </button>
             </div>
           </form>
         </div>
-        <Feeds />
+        <Routes>
+          <Route path="/" element={<Feeds />} />
+          <Route path="/FeedDetails" element={<FeedDeatail />} />
+        </Routes>
       </div>
       <Trending />
     </div>
