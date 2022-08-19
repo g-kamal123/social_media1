@@ -36,8 +36,8 @@
     cursor: pointer;
 }
 .imageUpload img{
-    height: 2rem;
-    width: 2rem;
+    max-height: 2rem;
+    max-width: 2rem;
 }
 .imageUpload label{
     display: flex;

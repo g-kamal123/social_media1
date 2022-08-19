@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import api from "../Postdata";
 import { v4 as uuid } from "uuid";
+import { useNavigate } from "react-router-dom";
 export const Storage = React.createContext();
 
 export const Contxt = (props) => {
+const nav = useNavigate()
   const [postsData, setpostsData] = useState([]);
   const [currPostComment, setCurrPostComment] = useState([]);
   const [allLikes, setAllLikes] = useState([]);
@@ -49,12 +51,6 @@ export const Contxt = (props) => {
     };
     const response = await api.post("/comments", toAdd);
     setCurrPostComment([response.data, ...currPostComment]);
-
-    // const arr = postsData.filter((item)=>item.id===id)
-    // arr.comments += 1
-    // let arr1 = postsData.filter((item)=>item.id!==id)
-    // arr1 = [arr,...arr1]
-    // setpostsData(arr1)
   };
   const addLike = (val) => {};
   const tweetHandler = async (content, image) => {
@@ -66,11 +62,25 @@ export const Contxt = (props) => {
       image: image,
     };
     const response = await api.post("/posts", toAdd);
-    console.log(response.data);
+    // console.log(response.data);
     let arr = [response.data, ...postsData];
     setpostsData(arr);
+    nav('/')
   };
   //   console.log(postsData);
+
+  const deletePost =async(val)=>{
+    const response = await api.delete(`/posts/${val}`)
+    console.log(response)
+    let arr = await getPosts()
+    setpostsData(arr)
+    nav('/')
+  }
+  const editPost = async(val)=>{
+    await api.put(`/posts/${val.id}`,val)
+    let response = await api.get('/posts')
+    setpostsData(response.data)
+  }
   return (
     <Storage.Provider
       value={{
@@ -80,6 +90,8 @@ export const Contxt = (props) => {
         currPostComment: currPostComment,
         replyComment: replyComment,
         allLikes: allLikes,
+        deletePost:deletePost,
+        editPost:editPost
       }}
     >
       {props.children}

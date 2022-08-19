@@ -2,31 +2,48 @@
   "posts": [
     {
       "id": "52975f53-c157-4992-b986-70cf22f8cab2",
-      "author": "Kamal",
+      "image": "blob:http://localhost:3000/def21141-68c2-42f7-8086-18dd10c18de3",
       "content": "Since 500px started as a photographic community in 2003, over 15 million photographers from 195 countries have shared over 120 million images for the world to enjoy. Getty Images is pleased to offer several million of the best images from the community for exclusive licensing, with new images being added all the time",
-      "image": "blob:http://localhost:3000/cb7b8330-2776-457e-b72a-3c5a92009ba1",
-      "likes":0,
-      "comments":0
+      "author": "Kamal"
     },
     {
-      "id": "92dbb5ba-2fa8-4ded-9aa3-58025545339e",
-      "author": "Kamal",
-      "content": "fgfhhf",
-      "image": "blob:http://localhost:3000/701485fc-8399-47f3-957f-163e67d957e9"
+      "id": "4eeb7b75-1d71-4a07-9356-b2210a347129",
+      "image": "",
+      "content": "hmbhmhbmhmh mhjmhhhk",
+      "author": "Kamal"
     },
     {
-      "id": "b8a2e3a2-eacd-493e-8448-6de1dd72662c",
+      "id": "f9b022ef-6112-4a0a-a76e-cae6f1f4b583",
       "author": "Kamal",
-      "content": "dvdfb",
+      "content": "hjhhkh",
+      "image": ""
+    },
+    {
+      "id": "72e16acd-4f5b-44de-ac4e-8d7d97221ce4",
+      "author": "Kamal",
+      "content": "jghghjgj",
+      "image": ""
+    },
+    {
+      "id": "96498a6d-c11e-425a-801d-8abfbab1c73b",
+      "author": "Kamal",
+      "content": "hjhkhkgkhkgkkyuyky",
+      "image": ""
+    },
+    {
+      "id": "d7063689-58e7-44e6-b3a3-1d1f9f3c3a36",
+      "author": "Kamal",
+      "content": "hmghmvmvjgj",
+      "image": ""
+    },
+    {
+      "id": "80a04b95-3cd9-4ac6-96e8-652fa308d343",
+      "author": "Kamal",
+      "content": "ngnnnf",
       "image": ""
     }
   ],
   "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": "92dbb5ba-2fa8-4ded-9aa3-58025545339e"
-    },
     {
       "id": 2,
       "body": "dbfdhfbb",
@@ -76,11 +93,11 @@
       "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
     }
   ],
-  "likes":[
+  "likes": [
     {
-      "id":4,
-      "author":"kamal",
-      "postId":"92dbb5ba-2fa8-4ded-9aa3-58025545339e"
+      "id": 4,
+      "author": "kamal",
+      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
     }
   ],
   "profile": {
