@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import { Storage } from "./Storage";
 import classes from "./styles/Social.module.css";
 import Trending from "./Trending";
+import User from "./User";
 
 function Social() {
   return (
@@ -15,6 +16,7 @@ function Social() {
         <Routes>
           <Route path="/" element={<Feeds />} />
           <Route path="/FeedDetails" element={<FeedDeatail />} />
+          <Route path="/User" element={<User/>} />
         </Routes>
       </div>
       <Trending />

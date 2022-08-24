@@ -2,97 +2,73 @@
   "posts": [
     {
       "id": "52975f53-c157-4992-b986-70cf22f8cab2",
-      "image": "blob:http://localhost:3000/def21141-68c2-42f7-8086-18dd10c18de3",
+      "image": "blob:http://localhost:3000/094edbbc-ee9a-4e28-9678-f75f1f006f80",
       "content": "Since 500px started as a photographic community in 2003, over 15 million photographers from 195 countries have shared over 120 million images for the world to enjoy. Getty Images is pleased to offer several million of the best images from the community for exclusive licensing, with new images being added all the time",
-      "author": "Kamal"
+      "author": "kamal",
+      "liked": {
+        "kamal": 1,
+        "shiv": 1,
+        "": 1,
+        "ganesh": 1
+      }
     },
     {
       "id": "4eeb7b75-1d71-4a07-9356-b2210a347129",
-      "image": "",
-      "content": "hmbhmhbmhmh mhjmhhhk",
-      "author": "Kamal"
+      "image": "blob:http://localhost:3000/3b405c7e-4a71-41e8-aa5f-af3bbf0ec269",
+      "content": "hmbhmhbmhmh mhjmhhh",
+      "author": "amit",
+      "liked": {
+        "kamal": 1,
+        "amit": 1
+      }
     },
     {
       "id": "f9b022ef-6112-4a0a-a76e-cae6f1f4b583",
-      "author": "Kamal",
+      "image": "",
       "content": "hjhhkh",
-      "image": ""
+      "author": "Kamal",
+      "liked": {
+        "kamal": 1
+      }
     },
     {
       "id": "72e16acd-4f5b-44de-ac4e-8d7d97221ce4",
-      "author": "Kamal",
+      "image": "",
       "content": "jghghjgj",
-      "image": ""
+      "author": "kamal",
+      "liked": {
+        "kamal": 0
+      }
     },
     {
       "id": "96498a6d-c11e-425a-801d-8abfbab1c73b",
-      "author": "Kamal",
+      "image": "",
       "content": "hjhkhkgkhkgkkyuyky",
-      "image": ""
+      "author": "kamal",
+      "liked": {
+        "kamal": 0
+      }
     },
     {
       "id": "d7063689-58e7-44e6-b3a3-1d1f9f3c3a36",
-      "author": "Kamal",
+      "image": "",
       "content": "hmghmvmvjgj",
-      "image": ""
+      "author": "kamal",
+      "liked": {
+        "kamal": 0
+      }
     },
     {
       "id": "80a04b95-3cd9-4ac6-96e8-652fa308d343",
-      "author": "Kamal",
+      "author": "kamal",
       "content": "ngnnnf",
-      "image": ""
+      "image": "",
+      "liked": {
+        "kamal": 0
+      }
     }
   ],
-  "comments": [
-    {
-      "id": 2,
-      "body": "dbfdhfbb",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2",
-      "author": "Kamal"
-    },
-    {
-      "id": "8c51e356-5542-495d-a08f-6ac546cab357",
-      "author": "kamal",
-      "body": "dgdfhfhfh",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
-    },
-    {
-      "id": "e17bebc2-b6ad-45b7-9ff6-18afe0add697",
-      "author": "kamal",
-      "body": "fgnfgbfg",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
-    },
-    {
-      "id": "564ca4a5-73c3-4b18-99e9-54d705c3942a",
-      "author": "kamal",
-      "body": "fbgfhgfhg",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
-    },
-    {
-      "id": "e1fdeb0e-5847-4a75-bf0f-bb1d0bcaf01e",
-      "author": "kamal",
-      "body": "gfngngfn",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
-    },
-    {
-      "id": "e6251c26-4b91-49e5-ae9b-805e1b81fcfc",
-      "author": "kamal",
-      "body": "gfngngfnngngnbg",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
-    },
-    {
-      "id": "56c7f6f9-c039-46db-a750-2c28be0529c7",
-      "author": "kamal",
-      "body": "nbvnngn",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
-    },
-    {
-      "id": "149734a2-f0b8-4216-99b1-7bb24a913579",
-      "author": "kamal",
-      "body": "nbvnngnngngbn",
-      "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
-    }
-  ],
+  "comments": [],
   "likes": [
     {
       "id": 4,
@@ -100,7 +76,34 @@
       "postId": "52975f53-c157-4992-b986-70cf22f8cab2"
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "profile": [
+    {
+      "name": "kamal",
+      "id": 1,
+      "pass": 1234
+    },
+    {
+      "name": "amit",
+      "id": 2,
+      "pass": 1234
+    },
+    {
+      "id": "d110cf56-fc58-40ae-bf89-6b07389fbc4d",
+      "name": "shiv",
+      "pass": "1234"
+    },
+    {
+      "id": "ca0dc8fa-c555-43d6-bf5b-d680a8e06813",
+      "name": "ganesh",
+      "pass": "1234"
+    },
+    {
+      "id": "1ccaa42e-7a8a-4f18-a95d-94ea63510523",
+      "name": "abcd",
+      "pass": "1234"
+    }
+  ],
+  "curruser": {
+    "user": "kamal"
   }
 }

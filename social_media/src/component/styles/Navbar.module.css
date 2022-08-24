@@ -1,9 +1,14 @@
+.nav{
+    /* position: relative; */
+}
 .navbar{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
     box-shadow: 1px 0 0px 0px rgba(0, 0, 0, 0.26);
+    /* position: fixed; */
+    /* left: 0; */
 }
 .navbar i{
     /* color: blue; */
@@ -28,4 +33,40 @@
 }
 .navbar .profile{
     font-size: 2.9rem;
+}
+.navbar .myprofile,.home,.logout{
+    position: relative;
+}
+.navbar .myprofile:hover::after{
+    content: "PROFILE";
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -1.2rem;
+    left: 0;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+.navbar .home:hover::after{
+    content: "HOME";
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -1.4rem;
+    left: 1vw;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+.navbar .logout:hover::after{
+    content: "LOGOUT";
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -1.2rem;
+    left: 0;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+.mode i{
+    color: whitesmoke;
 }

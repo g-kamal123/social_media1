@@ -82,7 +82,7 @@ function Feeds() {
       {detail.postsData.map((item) => (
         <>
           <hr />
-          <li>
+          <li className={detail.mode && classes.mode}>
             <i className="fa-solid fa-circle-user"></i>
             <div className={classes.content}>
               <div className={classes.title}>
@@ -99,7 +99,7 @@ function Feeds() {
                 </p>
                 </div> */}
               </div>
-              <Link to="/FeedDetails" state={{ feed: item }}>
+              <Link to="/feed/FeedDetails" state={{ feed: item }}>
               <p className={classes.textContent} onClick={() => detail.fetchComment(item)}>{item.content}</p>
               </Link>
               <img src={item.image} alt="" />
@@ -113,9 +113,8 @@ function Feeds() {
                 </Link>
                 <i className="fa-solid fa-retweet"></i>
                 <i
-                  className={`fa-solid fa-heart ${detail.allLikes.map(
-                    (it) => it.postId === item.id && classes.active
-                  )}`}
+                  className={`fa-solid fa-heart ${item.liked[detail.user]===1 && classes.active
+                  }`}
                   onClick={() => detail.addLike(item)}
                 ></i>
               </p>

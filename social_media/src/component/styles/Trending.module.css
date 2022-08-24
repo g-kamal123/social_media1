@@ -1,3 +1,6 @@
+.trend{
+    position: relative;
+}
 .trending{
     padding: 0 1rem;
     display: flex;
@@ -14,7 +17,8 @@
     display: flex;
     gap: 0.8rem;
     width: fit-content;
-    background-color: #EFF3F4
+    background-color: #EFF3F4;
+    position: relative;
 }
 .trending .search input{
     border: none;
@@ -80,4 +84,27 @@
 }
 .trendingNames p{
     margin: 0;
+}
+.listprofile{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 8vh;
+    max-height: 8rem;
+    min-width: 24vw;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 7px;
+    z-index: 1;
+}
+.listprofile li{
+    cursor: pointer;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 4vw;
+}
+.listprofile li:hover{
+    background-color: #dfe7e7;
 }

@@ -1,9 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Storage } from "./Storage";
 import classes from "./styles/Feeds.module.css";
 import { Modal } from "@mui/material";
 import classes1 from "./styles/Social.module.css";
+import styl from './styles/FeedDetail.module.css'
+import api from "../Postdata";
 
 function FeedDeatail() {
   const [editModal, setEditModal] = useState(false);
@@ -15,6 +17,15 @@ function FeedDeatail() {
   const [print,setPrint] = useState(feed)
   const [editContent, setEditContent] = useState(feed.content);
   const [editImage, setEditImage] = useState(feed.image);
+  const [flag,setFlag] = useState(false)
+  useEffect(()=>{
+    const getdata = async()=>{
+      const response = await api.get(`/posts/${print.id}`)
+      setPrint(response.data)
+    }
+    getdata()
+  },[flag])
+ 
   return (
     <>
       <ul className={classes.feeds}>
@@ -57,27 +68,42 @@ function FeedDeatail() {
             <img src={print.image} alt="" />
             <hr />
             <p className={classes.action}>
-              <i className="fa-solid fa-comment"></i>
+              <i className="fa-solid fa-comment" onClick={()=>detail.fetchComment(print.id)}></i>
               <i className="fa-solid fa-retweet"></i>
-              <i className="fa-regular fa-heart"></i>
+              <i
+                  className={`fa-solid fa-heart ${print.liked[detail.user]===1 && classes.active
+                  }`}
+                  onClick={() => {
+                    detail.addLike(print)
+                  setFlag(!flag)}}
+                ></i>
             </p>
           </div>
         </li>
         <li>
+          <div className={styl.inputcomm}>
           <input
             onChange={(event) => setReply(event.target.value)}
-            value={reply}
+            value={reply} placeholder='comments...'
           />
           <i
             class="fa-solid fa-paper-plane"
-            onClick={() => detail.replyComment(reply, feed.id)}
+            onClick={() => {
+              setReply('')
+              detail.replyComment(reply, feed.id)}}
           ></i>
+          </div>
         </li>
-        <ul>
+        <ul className={styl.comments}>
           {detail.currPostComment.map((item) => (
             <li>
-              <span>{item.body}</span>
-              <span>{item.author}</span>
+              <i className="fa-solid fa-circle-user"></i>
+            <p>
+          <span>{item.author}</span>
+          <p>{item.body}</p>
+          <hr />
+          </p>
+              <button onClick={()=>detail.delcomment(item)}>delete</button>
             </li>
           ))}
         </ul>
@@ -105,7 +131,7 @@ function FeedDeatail() {
                 onSubmit={(event) => {
                   event.preventDefault();
                   const toAdd ={
-                    id:print.id,image:editImage,content:editContent,author:print.author
+                    id:print.id,image:editImage,content:editContent,author:print.author,liked:{...print.liked}
                   }
                   setPrint(toAdd)
                   detail.editPost(toAdd)

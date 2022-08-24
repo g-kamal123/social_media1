@@ -1,0 +1,43 @@
+.inputcomm{
+    display: flex;
+    gap: 1rem;
+    padding: 5vw;
+    margin: 0;
+}
+.inputcomm input{
+    min-width: 45vw;
+    padding: 1vw;
+    height: fit-content;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.inputcomm input:focus{
+    outline: 0;
+    border-bottom: 1px solid black;
+}
+.comments{
+    padding: 0;
+    margin: 0;
+}
+.comments li{
+    display: flex;
+    position: relative;
+}
+.comments li p{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+}
+.comments li button{
+    position: absolute;
+    right: 8vw;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.comments li button:hover{
+    color: red;
+    font-size: 1.2rem;
+}
